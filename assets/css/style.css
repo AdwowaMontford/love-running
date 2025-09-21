@@ -1,0 +1,21 @@
+/* asterisk is the wildcard selector which ensures that the website does not put the default layout in*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    background-color: lightcoral;
+}
+
+/* main content */
+main {
+    background-color: lightblue;
+}
+
+/* footer */
+footer {
+    background-color: orange;
+}

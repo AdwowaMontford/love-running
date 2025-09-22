@@ -121,4 +121,22 @@ footer {
     .nav-toggle-label {
         display: none;
     }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    main {
+        /* push main content down to make room for larger header */
+        margin-top: 79px;
+    }
+}
+
+/* for small laptops and larger (992px and over)  */
+@media (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
 }

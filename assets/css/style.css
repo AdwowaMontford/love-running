@@ -96,7 +96,10 @@ main {
 #hero {
     height: 600px;
     width: 100%;
-    background-color: lightgreen;
+    background-image: url("images/hero-image.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 /* footer */

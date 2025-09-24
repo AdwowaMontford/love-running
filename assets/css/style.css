@@ -49,12 +49,12 @@ header a {
 }
 
 #menu {
-    font-size: 100%;
+    font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -75,7 +75,7 @@ nav {
 }
 
 /* nav toggle */
-#nav-toggle:checked ~ nav {
+#nav-toggle:checked~nav {
     display: block;
 }
 
@@ -91,23 +91,19 @@ nav {
 main {
     /* make main element take up any surplus space to push footer down*/
     flex: 1 0 auto;
-    margin-top: 40px;
+    margin-top: 47px;
 }
 
 /* hero section styles */
 #hero {
     height: 600px;
     width: 100%;
-    background-image: url("images/hero-image.webp");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
+    background-image: url("images/hero-image.webp") no-repeat center center/cover; 
 }
 
 /* Final rgba value sets the opacity so it is semi-transparent */
 #cover-text {
-    background-color: rgba(241, 109, 107, 0.7);
+    background-color: rgba(241, 109, 107, .7);
     font-size: 130%;
     position: absolute;
     bottom: 30px;
@@ -117,8 +113,9 @@ main {
     padding-left: 10px;
 }
 
-#cover-text > h2,
-#cover-text > h3 {
+
+#cover-text>h2,
+#cover-text>h3 {
     color: #ffffff;
 }
 
@@ -132,15 +129,14 @@ main {
 }
 
 #social-networks i {
-    font-size: 150%;
+    font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
 }
 
-/* media query: tablets or larger (768px and over) */
-@media (min-width: 768px) {
-    /* for the header */
+/* Media query: tablets and larger (768px and up) */
 
+@media screen and (min-width: 768px) {
     nav {
         display: block;
         position: relative;
@@ -173,14 +169,15 @@ main {
     }
 }
 
-/* for the hero text cover at 768px*/
+/* for the hero text cover at 768px
 #cover-text {
             width: 30px;
             right: 50px;
-}   
+}    */
 
-/* for small laptops and larger (992px and over)  */
-@media (min-width: 992px) {
+/* Large devices (laptops and desktops, 992px and up) */
+
+@media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
         }

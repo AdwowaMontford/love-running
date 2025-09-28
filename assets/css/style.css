@@ -179,6 +179,11 @@ main {
     flex-wrap: wrap;
 }
 
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 /* footer */
 #social-networks {
     text-align: center;
